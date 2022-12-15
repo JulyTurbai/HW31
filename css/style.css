@@ -1,4 +1,108 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1280px;
+  height: 80px;
+  background: black;
+  padding: 20px 0;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__menu_logo {
+  width: 120px;
+  height: 20px;
+  margin-right: 50px;
+}
+.header__menu_watching {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: orangered;
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-family: "TT Norms Pro";
+  font-size: 14px;
+}
+.header__menu_watching .items {
+  margin-right: 30px;
+  border-color: white;
+}
+.header__menu .items:last-child {
+  margin-right: 0;
+}
+.header__menu_add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+}
+.header__menu_add .circle {
+  width: 5px;
+  height: 5px;
+  border: 1px solid silver;
+  background: silver;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.header__menu_add .circle:last-child {
+  margin-right: 0px;
+}
+.header__menu_add .little_items {
+  display: none;
+  color: orangered;
+}
+.header__menu_tarifs {
+  width: 100px;
+  height: 30px;
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+  background: black;
+  border-radius: 3px;
+}
+.header__menu_search {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.header__menu_lang {
+  font-size: 14px;
+  margin-left: 20px;
+  color: grey;
+}
+.header__menu_exit {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.header__menu .little_tarifs {
+  display: none;
+}
+
 .footer {
+  max-width: 1280px;
   height: 200px;
   margin-top: auto;
   display: -webkit-box;
@@ -140,7 +244,7 @@
 }
 
 .sound-control {
-  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,9 +291,12 @@ li {
 }
 
 .film-block {
-  width: 1280px;
+  max-width: 1280px;
   height: 700px;
   background: url(../img/mainImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,101 +304,6 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 80px;
-  background: black;
-  padding: 20px 0;
-}
-
-.header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header__menu_logo {
-  width: 120px;
-  height: 20px;
-  margin-right: 50px;
-}
-.header__menu_watching {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: orangered;
-  margin-right: 30px;
-  text-transform: uppercase;
-  font-family: "TT Norms Pro";
-  font-size: 14px;
-}
-.header__menu_watching .items {
-  margin-right: 30px;
-  border-color: white;
-}
-.header__menu .items:last-child {
-  margin-right: 0;
-}
-.header__menu_add {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 50px;
-}
-.header__menu_add .circle {
-  width: 5px;
-  height: 5px;
-  border: 1px solid silver;
-  background: silver;
-  border-radius: 50%;
-  margin-right: 3px;
-}
-.header__menu_add .circle:last-child {
-  margin-right: 0px;
-}
-.header__menu_tarifs {
-  width: 100px;
-  height: 30px;
-  border: 1px solid white;
-  color: white;
-  font-size: 14px;
-  background: black;
-  border-radius: 3px;
-}
-.header__menu_search {
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
-}
-.header__menu_lang {
-  font-size: 14px;
-  margin-left: 20px;
-  color: grey;
-}
-.header__menu_exit {
-  font-size: 14px;
-  color: white;
-  text-transform: uppercase;
-  margin-left: 20px;
 }
 
 @font-face {
@@ -307,4 +319,192 @@ li {
   src: local("../fonts/TT Norms Pro Thin"), local("TTNormsPro-Thin"), url("../fonts/TTNormsPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNormsPro-Thin.woff2") format("woff2"), url("../fonts/TTNormsPro-Thin.woff") format("woff"), url("../fonts/TTNormsPro-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
+}
+@media (max-width: 414px) {
+  .film-block {
+    background-image: url(../img/adaptive.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .header__menu_watching {
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_logo {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_tarifs {
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_tarifs {
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_exit {
+    margin-right: 25px;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_add {
+    position: relative;
+    z-index: 5000;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_search {
+    z-index: 6000;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_lang {
+    z-index: 7000;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_exit {
+    z-index: 7000;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_add .circle {
+    z-index: 9000;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_add:hover .header__menu_little {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+}
+@media (max-width: 414px) {
+  .sound-control__button {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 414px) {
+  .sound-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu_little {
+    position: absolute;
+    width: 150px;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    background: black;
+    border-radius: 2px;
+    top: 0px;
+    padding-top: 17px;
+    font-size: 12px;
+    margin-left: 25px;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu .little_items {
+    display: initial;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 414px) {
+  .header__menu .little_tarifs {
+    display: initial;
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    font-size: 14px;
+    background: black;
+    border-radius: 3px;
+  }
+}
+@media (max-width: 414px) {
+  .footer {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__menu_info {
+    color: white;
+    font-size: 11px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__img {
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  .footer__menu .film-name {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__menu_elements {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__menu_reaction {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__menu_reaction .footer__menu_like {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__menu_reaction .footer__menu_dislike {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__menu_watch {
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__menu_add-button {
+    width: 70px;
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid white;
+  }
 }/*# sourceMappingURL=style.css.map */
